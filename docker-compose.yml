@@ -74,9 +74,8 @@ services:
 
 networks:
   frontend:
-    driver: host
   backend:
-    driver: host
 
-
-
+volumes:
+  prometheus_data:
+  grafana_data:
