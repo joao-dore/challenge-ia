@@ -1,15 +1,14 @@
 
-### IF YOU WANT USE SLACK, UNCOMMENT THE LINES BELLOW AND COMMENT THE LINES ABOVE
-### REMEMBER, IF YOU WANT USE SLACK, YOU DON'T NEED THE MONGO AND ROCKETCHAT SERVICES, SO YOU CAN REMOVE THIS SERVICES FROM docker-compose FILE.
-### PUT YOUR INFORMATION AS USERNAME, CHANNEL AND THE INCOMMING WEBHOOK
 
-#route:
-#   receiver: 'slack'
-#
-#receivers:
-#   - name: 'slack'
-#     slack_configs:
-#        - send_resolved: true
-#          username: 'YOUR USERNAME'
-#          channel: '#YOURCHANNEL'
-#          api_url: 'INCOMMING WEBHOOK'
+## PUT YOUR INFORMATION AS USERNAME, CHANNEL AND THE INCOMMING WEBHOOK
+
+route:
+   receiver: 'slack'
+
+receivers:
+   - name: 'slack'
+     slack_configs:
+        - send_resolved: true
+          username: 'joaodore'
+          channel: '#monitoração'
+          api_url: 'https://hooks.slack.com/services/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'
