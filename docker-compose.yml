@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
 
-  aplication:
+  application:
     image: joaodore/node
     networks:
       - backend
