@@ -1,7 +1,6 @@
 FROM golang AS building
 
 LABEL maintainer="Joao Vieira"
-LABEL version="1.0"
 
 ENV exporter_version 0.18.1
 

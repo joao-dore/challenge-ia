@@ -3,8 +3,6 @@ FROM alpine
 LABEL maintainer="Joao Vieira"
 
 
-ENV alertmanager_version 0.19.0
-
 WORKDIR /alertmanager
 
 RUN apk --no-cache add curl \
