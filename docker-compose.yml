@@ -5,7 +5,7 @@ services:
   aplication:
     image: joaodore/node
     networks:
-      - frontend
+      - backend
     ports:
     - 8081:8081
 
