@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
 
-  aplicacao:
+  aplication:
     image: joaodore/node
     networks:
       - frontend
@@ -72,6 +72,19 @@ services:
     ports:
       - 3000:3000
 
+  jenkins:
+    image: jenkins/jenkins:lts-jdk11
+    volumes:
+    - jenkins_home:/var/jenkins_home
+    networks:
+      - backend
+      - frontend
+    ports:
+    - 8080:8080
+    - 50000:50000
+
+
+
 networks:
   frontend:
   backend:
@@ -79,3 +92,4 @@ networks:
 volumes:
   prometheus_data:
   grafana_data:
+  jenkins_home:
