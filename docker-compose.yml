@@ -68,7 +68,6 @@ services:
       - grafana.config
     networks:
       - backend
-      - frontend
     ports:
       - 3000:3000
 
